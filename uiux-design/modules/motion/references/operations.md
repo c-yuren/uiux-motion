@@ -1,0 +1,10 @@
+# Operations and knowledge
+## Storage and hierarchy
+Keep installed skill read-only; project state in .motion. Core invariants > explicit user constraints/locks > local interaction override > component > feature > project defaults > user preference defaults > skill defaults. Approved changes may require renewed approval; Locked/Protected cannot be modified without explicit authorization. Inherit existing system before creating tokens. Record exceptions and rationale.
+## State, concurrency and versioning
+Use schemaVersion, stable IDs, revision, timestamps and baseline commit. The optional CLI uses exclusive lock and atomic rename for its own state edits, with expected revision checks. All other writers must coordinate with this protocol or use separate task branches/worktrees; external editors are not magically locked. Capture a checkpoint before changes; inspect dirty files and avoid overlapping ownership. No force push, no destructive reset. Resume only after checking baseline/current changes; invalidate stale evidence and use incremental scope. Store evidence locally, exclude large/sensitive captures from Git. Never record secrets.
+## Knowledge
+Core curated principles (versioned), shared sanitized experience (opt-in), explicit user preferences, isolated project decisions. Record candidate ID, problem/context, principle, applicable platforms, limitations, source/license, evidence and status. Promote only after validation and explicit permission for cross-project sharing; never copy private code, screenshots, credentials or identifying information. Correct or retire stale patterns; don't let a single preference become universal.
+## Handoff
+Include task ID, scope/mode/depth, baseline/current revision, completed/remaining IDs, approved/locked designs, owned paths, exact next action, test commands/results, tool availability, blockers and evidence. When switching agents, load rather than regenerate registry. Conflicting writers: stop, inspect current data and merge with human review if needed.
+

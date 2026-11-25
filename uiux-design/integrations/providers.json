@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "providers": [
+    {
+      "name": "shadcn/ui",
+      "url": "https://ui.shadcn.com/",
+      "role": "components"
+    },
+    {
+      "name": "Radix UI",
+      "url": "https://www.radix-ui.com/",
+      "role": "accessible primitives"
+    },
+    {
+      "name": "Magic UI",
+      "url": "https://magicui.design/",
+      "role": "visual effects"
+    },
+    {
+      "name": "Aceternity UI",
+      "url": "https://ui.aceternity.com/",
+      "role": "display components"
+    },
+    {
+      "name": "React Bits",
+      "url": "https://reactbits.dev/",
+      "role": "creative components"
+    },
+    {
+      "name": "21st.dev",
+      "url": "https://21st.dev/",
+      "role": "component discovery"
+    },
+    {
+      "name": "Mobbin",
+      "url": "https://mobbin.com/",
+      "role": "inspiration only"
+    },
+    {
+      "name": "Dribbble",
+      "url": "https://dribbble.com/",
+      "role": "inspiration only"
+    },
+    {
+      "name": "Behance",
+      "url": "https://www.behance.net/",
+      "role": "inspiration only"
+    }
+  ],
+  "policy": "Verify current availability, exact asset license, dependencies and permissions before reuse; no automatic install."
+}

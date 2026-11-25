@@ -1,0 +1,3 @@
+# On-demand media extension
+UI/UX is primary. For documents/reports use page grid, heading hierarchy, readable line length, figure captions, margins and page-break checks. For slides use one central claim per slide, large readable type, evidence with clear annotations, coherent deck system. For spec diagrams use accurate geometry, labels, units, legend, scale and line weights. For posters/brand graphics use art direction, optical balance, print-safe contrast and bleed only when required. Respect requested medium, use actual editable output when needed, and verify rendered page(s); do not fake exact engineering geometry or fabricate data. Follow host artifact tooling when available.
+

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Interaction",
+  "type": "object",
+  "required": [
+    "id",
+    "component",
+    "interaction",
+    "context"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]+$"
+    },
+    "component": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interaction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "reviewed",
+        "implemented",
+        "verified",
+        "failed",
+        "blocked",
+        "stale",
+        "skipped"
+      ]
+    },
+    "decision": {
+      "enum": [
+        null,
+        "keep",
+        "refine",
+        "add",
+        "replace",
+        "simplify",
+        "repair",
+        "remove"
+      ]
+    },
+    "protection": {
+      "enum": [
+        "open",
+        "preferred",
+        "approved",
+        "locked",
+        "protected"
+      ]
+    },
+    "gates": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "description"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

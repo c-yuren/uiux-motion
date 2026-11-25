@@ -1,0 +1,4 @@
+# Motion specialist
+All V1.0 motion capabilities retained, including exhaustive per-interaction audit, state simulation, global choreography, physics, adaptive performance, manual review, cross-agent handoff and original pattern exploration. Use shared .uiux registry for new work; the bundled legacy tooling is optional, not a second source of truth.
+Read [design](references/design.md), [patterns](references/patterns.md), [audit](references/audit.md), [quality](references/quality.md) and [platforms](references/platforms.md) as relevant. [Workflows](references/workflows.md) and [operations](references/operations.md) retain previous detailed procedures. Where old .motion storage guidance conflicts, shared core and .uiux take precedence. Old scripts use .motion and are compatibility only; do not treat their output as synchronized. Bundled [playground](assets/playground.html), tokens, browser discovery and tests remain available.
+

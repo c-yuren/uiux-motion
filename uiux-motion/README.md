@@ -1,0 +1,2 @@
+# Legacy motion tooling
+The active skill has moved to ../uiux-design/SKILL.md. This directory preserves the V1.0 CLI, reference material and tests for existing installations/scripts. It is not an independently discoverable skill anymore. New tasks should use the unified registry. Do not run both old and new registry writers as if they synchronize automatically; migration is a one-time copy, not live sync.

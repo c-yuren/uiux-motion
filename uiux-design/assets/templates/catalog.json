@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "id": "editorial-dashboard",
+      "file": "editorial-dashboard.html",
+      "tags": [
+        "visual",
+        "information",
+        "layout",
+        "responsive"
+      ],
+      "framework": "html-css",
+      "origin": "original repository example",
+      "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
+      "dependencies": []
+    },
+    {
+      "id": "dual-quota",
+      "file": "dual-quota.svg",
+      "tags": [
+        "visual",
+        "information",
+        "iconography",
+        "data"
+      ],
+      "framework": "svg",
+      "origin": "original repository example",
+      "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
+      "dependencies": []
+    },
+    {
+      "id": "ambient-material",
+      "file": "ambient-material.html",
+      "tags": [
+        "visual",
+        "motion",
+        "effects",
+        "material"
+      ],
+      "framework": "html-css",
+      "origin": "original repository example",
+      "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
+      "dependencies": []
+    }
+  ]
+}

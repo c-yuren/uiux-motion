@@ -1,0 +1,11 @@
+# Visual design and art direction
+## Process
+Understand audience, purpose, brand, information density, platform and surrounding interface. Identify focal point and hierarchy, set visual grammar, sketch alternatives with different compositions rather than palette swaps, render, inspect at actual scale, refine. Preserve existing successful style; use adaptive instead of automatic redesign.
+## Principles
+Grid and optical alignment, proportion, rhythm, proximity, negative space and grouping. Prioritize meaningful contrast in scale, weight, shape and position. Typography: legible typeface, appropriate size, line length, line-height, numeric alignment, script/localization and fallback; avoid unjustified uppercase or tiny labels. Color: semantic tokens, neutral structure, purposeful accents, distinguish states without color alone, verify contrast on real background. Geometry: coherent radius, stroke, icon optical weight, baseline; avoid nesting every region in rounded cards. Depth: purposeful shadows, borders and layers; material effects should not impair text.
+Art direction: Minimal/Native/Productivity, Swiss/Editorial, Technical/Industrial, Material/Spatial, Expressive/Experimental, Cinematic/Premium. Choose per project and context, not as fixed templates. Audit repetitive layouts, generic hero sections, over-cardification, arbitrary gradient, excessive whitespace, inconsistent sizes/icons and weak focal points; these techniques are allowed when justified.
+## Display effects
+Ambient motion, animated light/gradient, glass/metal/liquid, procedural geometry, particles, shaders, kinetic type and data-driven visuals belong here when presentation is primary. Use existing CSS/SVG/Canvas/WebGL as appropriate; static fallback, reduced motion, pause offscreen, contrast over worst-case frames, performance budgets and no essential information solely in movement. Consult motion module for timing and continuity. Do not add continuous animation just for spectacle.
+## Responsive and media
+Inspect at narrow/wide sizes, light/dark, zoom, long and localized text. Reflow information by priority; do not just shrink. For print/slides/docs use [media extension](media.md). Use editable/vector outputs where possible.
+

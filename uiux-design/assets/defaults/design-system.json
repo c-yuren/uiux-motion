@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "style": "adaptive",
+  "visual": {
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48
+    ],
+    "radius": {
+      "small": 4,
+      "medium": 8,
+      "large": 12
+    },
+    "typography": {
+      "family": "system-ui",
+      "body": 16
+    },
+    "colors": {
+      "strategy": "inherit semantic roles from project; verify contrast"
+    }
+  },
+  "motion": {
+    "tokens": "modules/motion/assets/defaults/motion-tokens.json",
+    "respectReducedMotion": true
+  },
+  "quality": "premium",
+  "note": "Starting points only; inherit project design first."
+}

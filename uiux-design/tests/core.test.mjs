@@ -1,0 +1,12 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {emptyRegistry,addEntity,appendCheck,patchCheck,setScope,invalidate,migrate,summarize} from "../scripts/core.mjs";
+const e={id:"sidebar",component:"Sidebar",context:"home",sourceFiles:["src/sidebar.tsx"],dependencies:["src/theme.ts"],checks:[{id:"appearance",dimension:"visual",subject:"layout"},{id:"toggle",dimension:"motion",subject:"open-close"}]};
+const initial=()=>addEntity(emptyRegistry(),0,e);
+const evidence=[{path:"evidence/example.png",description:"fixture"}];
+const gates=Object.fromEntries(["functional","visual","accessibility","regression"].map(k=>[k,{status:"pass",reason:"fixture",evidence:[evidence[0].path]}]));
+test("multi-dimensional registry, duplicate IDs, optimistic revision",()=>{const a=initial();assert.equal(summarize(a).checks,2);assert.throws(()=>addEntity(a,1,e));assert.throws(()=>patchCheck(a,0,"sidebar","appearance",{}));assert.equal(summarize(appendCheck(a,1,"sidebar",{id:"focus",dimension:"interaction",subject:"keyboard"})).checks,3)});
+test("evidence and per-dimension gates",()=>{const a=initial();assert.throws(()=>patchCheck(a,1,"sidebar","appearance",{status:"verified"}));const b=patchCheck(a,1,"sidebar","appearance",{status:"verified",decision:"keep",evidence,gates});assert.equal(b.entities[0].checks[1].status,"pending");assert.throws(()=>patchCheck(b,2,"sidebar","toggle",{status:"verified",decision:"keep",evidence,gates}));assert.equal(summarize(b).recordedComplete,false)});
+test("dependency invalidation",()=>{const a=initial();assert.equal(invalidate(a,1,["src/theme.ts"]).entities[0].checks[0].status,"stale");assert.equal(invalidate(a,1,["other.ts"]).entities[0].checks[0].status,"pending")});
+test("migration non-destructive, grouping, stale evidence, protection",()=>{const old={schemaVersion:1,revision:4,items:[{id:"a",component:"Sidebar",context:"home",interaction:"open",status:"verified"},{id:"b",component:"Sidebar",context:"home",interaction:"close",protection:"locked"}]};const m=migrate(emptyRegistry(),0,old);assert.equal(m.entities.length,1);assert.equal(m.entities[0].checks.length,2);assert.equal(m.entities[0].checks[0].status,"stale");assert.equal(m.entities[0].protection,"locked");assert.throws(()=>migrate(m,1,old));assert.equal(old.items[0].status,"verified");assert.throws(()=>patchCheck(m,1,"legacy:a","motion:a",{decision:"replace"}))});
+test("scope cannot conceal outstanding checks",()=>{const a=setScope(initial(),1,[]);assert.equal(summarize(a).recordedComplete,false)});

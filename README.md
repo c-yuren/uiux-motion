@@ -1,19 +1,20 @@
-# UIUX Motion
+# UIUX Design
 
-A cross-agent skill for motion design, interaction auditing, and iterative refinement.
+A unified agent skill for visual, information, motion and interaction design, creative exploration, templates and systematic UI/UX refinement.
 
-## Install
-Clone this repository and copy the `uiux-motion/` folder (the folder containing SKILL.md) into your agent's supported skill directory. For agents without skill discovery, ask it to read that SKILL.md explicitly. No mandatory MCP. Optional tooling uses Node.js 18+; browser tools require Playwright and an installed browser in the target project.
+**This repository retains its original name, uiux-motion.** The canonical installable skill is now `uiux-design/`. The previous motion tooling remains in `uiux-motion/` for compatibility; it is not a second active skill.
+
+## Install / upgrade
+Clone or pull this repository and copy **uiux-design/** (the directory containing SKILL.md) into your agent's supported skills directory. Remove or disable the older installed uiux-motion skill only after confirming the new copy works. Do not delete project .motion data. No mandatory MCP. For hosts without skill discovery, explicitly ask the agent to read uiux-design/SKILL.md.
 
 ## Usage
-- "Use uiux-motion to design the interactions for this new interface."
-- "Audit and refine every interaction in this app, including missing animation opportunities."
-- "Review each existing animation with me before changing it."
-- "Resume the previous agent's motion refinement."
+- Use uiux-design to redesign the visual presentation of this dashboard.
+- Use uiux-design in motion mode to refine all existing interaction animations.
+- Use uiux-design to audit the entire application, including missing feedback and visual opportunities.
+- Use uiux-design to compare several original approaches and show interactive previews before changing code.
 
-See [SKILL.md](uiux-motion/SKILL.md), [workflow](uiux-motion/references/workflows.md), [CLI guide](uiux-motion/references/tooling.md), and [acceptance matrix](docs/acceptance.md).
-
-The target project's .motion folder stores local decisions and evidence. Do not commit sensitive captures or secrets. This is an initial implementation: platform guidance is provided for multiple frameworks, but GUI execution and visual judgment depend on available host tools. No automatic assertion of Premium quality.
+The unified registry lives in the target project's .uiux/ directory. Optional Node.js 18+ CLI: `node /path/to/uiux-design/scripts/uiux.mjs init`, then `migrate` if you have .motion/registry.json, then `report`. Migration is non-destructive and marks old evidence for revalidation. See [architecture](docs/architecture.md), [skill](uiux-design/SKILL.md), [tooling](uiux-design/core/tooling.md), [acceptance](docs/unified-acceptance.md).
 
 ## 中文
-這個 Skill 以新介面動態設計、既有介面逐項審核與優化、設計智慧三大能力為核心。支援全量與增量審核、人工逐項確認、可操作原型、跨 Agent 接續、效能及無障礙驗證。工具不足時必須標記未驗證項目，不得假裝通過。
+單一 Skill，六個專業模組，按需載入。Visual 也涵蓋展示型動畫及動態材質；Motion 偏重操作及狀態。支援逐項全量/增量審核、智慧模板、設計系統及跨 Agent 接續。
+
