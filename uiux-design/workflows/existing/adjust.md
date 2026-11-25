@@ -1,0 +1,2 @@
+# Adjust
+Target the named element/property/behavior; inspect baseline and relevant dependencies. Make the smallest necessary change within permission. Reuse tokens, do not redesign neighboring components, add dependencies, or expand scope without asking. For straightforward adjustment, brief rationale → Produce → targeted render/behavior and regression check; no full contract or registry required. If shared change would affect other pages, isolate or ask before widening.

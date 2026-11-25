@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "productTypes": [
+    "tool"
+  ],
+  "platforms": [
+    "desktop"
+  ],
+  "existing": "yes",
+  "intent": "adjust",
+  "scope": "local",
+  "impact": "low",
+  "authorization": "implementation-requested",
+  "domains": [
+    "motion"
+  ],
+  "taskId": "sidebar",
+  "inputs": [
+    "keyboard",
+    "mouse"
+  ],
+  "usage": [
+    "productivity"
+  ],
+  "medium": "interactive-ui"
+}

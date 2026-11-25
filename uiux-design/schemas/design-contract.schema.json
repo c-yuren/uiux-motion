@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Design Contract",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "taskId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "ready",
+        "approved",
+        "superseded"
+      ]
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "$ref": "product-context.schema.json"
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "inScope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "outOfScope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "inScope",
+        "outOfScope"
+      ]
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "openIssues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "locks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "enum": [
+              "visual",
+              "motion",
+              "information",
+              "interaction",
+              "system",
+              "technical"
+            ]
+          },
+          "impact": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "status": {
+            "enum": [
+              "proposed",
+              "accepted",
+              "approved",
+              "rejected",
+              "locked"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "approvalRef": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "domain",
+          "impact",
+          "status"
+        ]
+      }
+    },
+    "tokens": {
+      "type": "object"
+    },
+    "components": {
+      "type": "array"
+    },
+    "states": {
+      "type": "array"
+    },
+    "responsive": {
+      "type": "array"
+    },
+    "assets": {
+      "type": "array"
+    },
+    "prototypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "nextAction": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "taskId",
+    "revision",
+    "status",
+    "goal",
+    "context",
+    "scope",
+    "criteria",
+    "openIssues",
+    "locks",
+    "decisions"
+  ]
+}

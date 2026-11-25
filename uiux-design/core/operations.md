@@ -10,3 +10,6 @@ Maintain versioned core principles, project-local experience, explicit user pref
 ## Resource and delivery
 Budget by importance, severity, frequency and benefit. Quick: major issues; Balanced: common flows; Deep: all discovered entities and contexts; Extreme: deeper exploration. Save checkpoints each batch; stop when diminishing returns or budget exhausted, record remaining. Small delivery: changes, rationale, tests and limitations. Large: baseline, coverage, registry, alternatives, before/after, gate results, rollback/handoff. Actual measurements only.
 
+
+## V1.2 context and handoff
+Complex work may store .uiux/tasks/<task-id>/context.json, design-contract.json, checkpoint and deviation notes alongside existing registry. Do not rewrite older .uiux files just to add context. Keep stage, intent, scope, selected profiles, authority and baseline explicit. Use read-only context CLI to check metadata; agent records actual project evidence. Small tasks may use a brief note; do not require all artifacts for every change.

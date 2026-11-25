@@ -1,0 +1,2 @@
+# Redesign
+Explicitly distinguish surface redesign from changing user flow/brand/architecture. Preserve business semantics, data and user locks; explore different structures, visual grammar and interaction approaches. Build isolated prototypes and a full contract for significant redesign; obtain confirmation for unresolved high-impact decisions. Produce in reversible batches, verify feature parity, accessibility and migration paths. No unrelated rewrite.

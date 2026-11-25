@@ -1,0 +1,2 @@
+# Refine
+Improve existing design while preserving core intent and identity. Scope may be local, feature or full product. Establish baseline; for deep/full use shared registry and individually review every applicable entity, state and dimension, including missed opportunities. Rank by severity, frequency and benefit; compare alternatives and existing/no-change. Implement authorized batches, invalidate affected checks, verify before/after and report unreachable scope. High impact requires confirmation.

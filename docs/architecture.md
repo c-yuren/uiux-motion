@@ -7,3 +7,6 @@ Visual owns composition, appearance, typography, material and ambient/display ef
 ## Runtime
 Skill reasoning and host tools supply design work; CLI is a registry and template utility, not an autonomous designer. Browser and native UI execution are optional. Never claim full coverage from a static scanner. No mandatory MCP. Shared templates are local assets or externally researched candidates; no automatic remote code execution. UI/UX is the main scope; document/presentation/print design is an on-demand extension.
 
+
+## V1.2 extension
+See [composable context and production](v1.2-architecture.md). Existing storage remains compatible; task contexts and contracts are optional per-task files. No second Skill.

@@ -1,0 +1,2 @@
+# Commerce
+Prioritize product understanding, honest price/availability, clear variants, comparison, cart state and recovery. Keep important conditions visible; do not use deceptive urgency, hidden charges or manipulative defaults. Visual richness must support evaluation. Test long titles, unavailable items, loading, filter changes, responsive checkout and accessible forms. Simulate transactions with safe fixtures; never submit real orders during audit.

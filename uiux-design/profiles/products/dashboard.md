@@ -1,0 +1,2 @@
+# Dashboard / monitoring
+Prioritize decision-critical metrics, trustworthy units/time windows, comparisons and meaningful status. Use density and hierarchy based on frequency of reading. Show stale/unknown separately from zero; do not invent progress. Align comparable numbers, validate scales and data-source mapping, use color plus labels. Motion on live updates should retain orientation and avoid moving controls. Test boundary/empty/error states, rapid updates and time-zone/locale formatting. Read information module.

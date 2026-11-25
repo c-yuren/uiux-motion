@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "taskId": "sidebar",
+  "revision": 1,
+  "status": "ready",
+  "goal": "Refine sidebar",
+  "context": {
+    "schemaVersion": 1,
+    "productTypes": [
+      "tool"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "existing": "yes",
+    "intent": "adjust",
+    "scope": "local",
+    "impact": "low",
+    "authorization": "implementation-requested",
+    "domains": [
+      "motion"
+    ],
+    "taskId": "sidebar"
+  },
+  "scope": {
+    "inScope": [
+      "sidebar"
+    ],
+    "outOfScope": [
+      "navigation architecture"
+    ]
+  },
+  "baseline": "revision or screenshot ref",
+  "criteria": [
+    "keyboard remains functional"
+  ],
+  "locks": [],
+  "openIssues": [],
+  "decisions": [
+    {
+      "id": "timing",
+      "domain": "motion",
+      "description": "Retarget transition",
+      "impact": "low",
+      "status": "accepted"
+    }
+  ],
+  "tokens": {},
+  "components": [
+    {
+      "id": "sidebar"
+    }
+  ],
+  "states": [
+    "open",
+    "closed",
+    "interrupted"
+  ],
+  "responsive": [],
+  "assets": [],
+  "prototypes": [],
+  "nextAction": "Validate rapid open-close and focus restoration"
+}

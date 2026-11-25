@@ -1,0 +1,2 @@
+# Web
+Respect existing framework, progressive enhancement, semantic HTML, CSS breakpoints, focus/keyboard, browser zoom and history. Test actual browsers/viewport ranges, touch as relevant, long content and layout stability. Feature-detect advanced APIs and preserve functional fallback. For static sites avoid unnecessary client dependencies; for interactive apps keep state and async semantics independent of animation.

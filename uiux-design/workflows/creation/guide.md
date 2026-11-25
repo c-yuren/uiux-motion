@@ -1,0 +1,2 @@
+# Create
+Clarify desired output and purpose, research if necessary, select context and specialists, identify hierarchy, states and user paths. Choose appropriate existing design system if the new artifact belongs to an existing project. Explore distinct alternatives including no-motion where applicable, select with evidence, create contract if significant, produce only when authorized, validate against requirements and actual rendering. New project does not authorize unnecessary dependencies or unrelated files. For isolated concepts stop at Design/Prototype.

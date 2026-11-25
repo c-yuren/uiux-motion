@@ -13,7 +13,27 @@
       "framework": "html-css",
       "origin": "original repository example",
       "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
-      "dependencies": []
+      "dependencies": [],
+      "productTypes": [
+        "dashboard",
+        "tool"
+      ],
+      "platforms": [
+        "web",
+        "desktop",
+        "mobile",
+        "tablet"
+      ],
+      "stages": [
+        "design",
+        "produce"
+      ],
+      "intentTags": [
+        "create",
+        "extend",
+        "refine",
+        "explore"
+      ]
     },
     {
       "id": "dual-quota",
@@ -27,7 +47,29 @@
       "framework": "svg",
       "origin": "original repository example",
       "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
-      "dependencies": []
+      "dependencies": [],
+      "productTypes": [
+        "dashboard",
+        "tool",
+        "artifact"
+      ],
+      "platforms": [
+        "desktop",
+        "web",
+        "mobile",
+        "tablet",
+        "print"
+      ],
+      "stages": [
+        "design",
+        "produce"
+      ],
+      "intentTags": [
+        "create",
+        "extend",
+        "refine",
+        "explore"
+      ]
     },
     {
       "id": "ambient-material",
@@ -41,7 +83,27 @@
       "framework": "html-css",
       "origin": "original repository example",
       "license": "repository owner may reuse; no third-party assets; redistribution license not specified",
-      "dependencies": []
+      "dependencies": [],
+      "productTypes": [
+        "presentation",
+        "artifact"
+      ],
+      "platforms": [
+        "web",
+        "desktop",
+        "mobile",
+        "tablet"
+      ],
+      "stages": [
+        "design",
+        "produce"
+      ],
+      "intentTags": [
+        "create",
+        "extend",
+        "refine",
+        "explore"
+      ]
     }
   ]
 }

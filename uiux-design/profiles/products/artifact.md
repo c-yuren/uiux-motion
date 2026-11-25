@@ -1,0 +1,2 @@
+# Independent visual artifact
+Examples: icon, graphic, infographic, spec diagram, poster, slide, report. Start with actual medium, size, audience, purpose and required editable/vector fidelity. Use meaningful visual encoding, typography and legibility at intended size. Verify numerical/engineering accuracy and accessibility alternatives where applicable. For print check page bounds and export; for screen use light/dark and scaling if required. Animation is optional for digital artifacts; static deliverables require meaningful still output. Read visual media extension.

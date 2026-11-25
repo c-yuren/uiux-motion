@@ -1,0 +1,2 @@
+# Mobile
+Touch targets and spacing appropriate to actual platform, safe areas, keyboard inset, portrait/landscape, system navigation, accessible font scaling, gestures with alternatives. Keep important actions reachable without requiring one-handed use. Avoid hover-only interactions; test physical devices where available, reduced motion, input and network changes. Follow native platform convention or project's cross-platform design.

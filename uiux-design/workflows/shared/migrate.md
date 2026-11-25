@@ -1,0 +1,2 @@
+# Migrate
+Preserve design semantics, states, information and user locks while adapting platform/framework/medium. Inventory source behavior and target capabilities, map tokens/assets/inputs, identify unsupported features and accessible alternatives. Test functional parity, actual rendering and performance. Do not overwrite original unless explicitly requested. Legacy .motion data migration is separate from product migration.

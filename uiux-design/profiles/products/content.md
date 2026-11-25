@@ -1,0 +1,2 @@
+# Content / reading
+Prioritize clear heading hierarchy, navigation, line length, type rhythm, accessible links, search and reading progress. Use whitespace for grouping not filler. Preserve content completeness and distinguish editorial from ads. Keep persistent navigation unobtrusive; avoid scroll effects that interrupt reading. Test long articles, localization, zoom, keyboard, missing images, code/table overflow and print if needed.

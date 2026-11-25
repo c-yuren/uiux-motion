@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UIUX Task Context",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "taskId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "productTypes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "tool",
+          "presentation",
+          "dashboard",
+          "content",
+          "commerce",
+          "artifact"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "desktop",
+          "mobile",
+          "web",
+          "tablet",
+          "print"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "mouse",
+          "keyboard",
+          "touch",
+          "stylus",
+          "assistive"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "usage": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "productivity",
+          "monitoring",
+          "browsing",
+          "reading",
+          "presentation"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "medium": {
+      "enum": [
+        "interactive-ui",
+        "html",
+        "svg",
+        "pdf",
+        "print",
+        "slides",
+        "image",
+        "video",
+        "unknown"
+      ]
+    },
+    "intent": {
+      "enum": [
+        "create",
+        "extend",
+        "adjust",
+        "refine",
+        "redesign",
+        "repair",
+        "audit",
+        "explore",
+        "validate",
+        "migrate",
+        "system",
+        "learn",
+        "resume"
+      ]
+    },
+    "stage": {
+      "enum": [
+        "auto",
+        "design",
+        "produce",
+        "both"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "local",
+        "feature",
+        "product"
+      ]
+    },
+    "depth": {
+      "enum": [
+        "auto",
+        "quick",
+        "balanced",
+        "deep",
+        "extreme"
+      ]
+    },
+    "existing": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "impact": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ]
+    },
+    "authorization": {
+      "enum": [
+        "unspecified",
+        "read-only",
+        "implementation-requested"
+      ]
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "visual",
+          "motion",
+          "information",
+          "interaction",
+          "creativity",
+          "templates"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "manualReview": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "intent"
+  ]
+}

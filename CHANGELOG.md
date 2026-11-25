@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — Context-aware workflows
+- Composable product, platform, input and medium profiles.
+- Separate existing/new task intents and Design/Produce stages with explicit authorization boundaries.
+- Lightweight local changes, Design Contract and optional deterministic context CLI.
+- Contextual template ranking, examples, schemas and test cases. Existing registry and motion capabilities retained.
+
 ## 1.1.0 — Unified UIUX Design
 - Canonical single skill uiux-design; preserve all prior motion reference files, assets, scripts, schemas and tests.
 - Add visual, information, interaction, creativity and template modules.
