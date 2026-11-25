@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "activation": {
+    "mode": "auto",
+    "maxAutoLevel": 4
+  },
+  "preferences": {
+    "style": "adaptive",
+    "quality": "premium",
+    "depth": "auto"
+  }
+}

@@ -16,3 +16,6 @@ Initial implementation: core pure logic checked in a JS isolate; Node integratio
 
 ## V1.2 additions
 Verify independent mixed product/platform profiles; local adjustment minimal change; existing-design baseline and no scope expansion; design-only/read-only no product writes; produce-only respects design; approval of high-impact change; full product refine loads audit and all relevant dimensions; contract handoff and deviation; context-filtered template search. 22 pure JavaScript assertions exercised in an isolate during implementation; Node filesystem CLI and real agent/GUI acceptance not run here. Run node --test uiux-design/tests/*.test.mjs uiux-design/modules/motion/tests/*.test.mjs locally.
+
+## V1.2.1 acceptance
+Verify L0 unrelated, L1 indirect, L2 local, L3 feature, L4 full scope, manual/off/force and caps; per-field inheritance; explicit project root isolation; no write authority; duplicate reuse and narrow loading. 21 pure JavaScript assertions exercised in isolate during implementation. Node CLI and real-host smoke checks are included as tests/procedure but not executed here. Host discovery cannot be guaranteed by Skill instructions alone.

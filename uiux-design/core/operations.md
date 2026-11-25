@@ -13,3 +13,6 @@ Budget by importance, severity, frequency and benefit. Quick: major issues; Bala
 
 ## V1.2 context and handoff
 Complex work may store .uiux/tasks/<task-id>/context.json, design-contract.json, checkpoint and deviation notes alongside existing registry. Do not rewrite older .uiux files just to add context. Keep stage, intent, scope, selected profiles, authority and baseline explicit. Use read-only context CLI to check metadata; agent records actual project evidence. Small tasks may use a brief note; do not require all artifacts for every change.
+
+## V1.2.1 global use
+Installed skill remains read-only. Optional global preferences contain only explicit general defaults; project preferences and state are isolated at actual project root. See configuration.md. Avoid duplicate active workflows and preserve existing locks/configuration. Do not automatically sync private artifacts or edit host rules.

@@ -21,3 +21,6 @@ The optional bundled browser.mjs (modules/motion/scripts/) uses target-project P
 
 ## Context and contract (V1.2)
 From project root: node /path/uiux-design/scripts/context.mjs plan context.json ; node /path/uiux-design/scripts/context.mjs contract-check design-contract.json ; node /path/uiux-design/scripts/context.mjs templates context.json [query]. These commands read files and print JSON, never modify product files or persist authorization. Context plan validates explicit fields and applies conservative defaults; it does not infer natural language, inspect project source or grant permission. See example files under assets/defaults. Use the existing CLI separately for registry operations.
+
+## Activation and preferences (V1.2.1)
+Optional read-only commands: node /path/uiux-design/scripts/activation.mjs plan task.json --project-root /path/project ; node /path/uiux-design/scripts/activation.mjs resolve task.json. Optional --global-file FILE overrides default home preference file. Structured task JSON describes relevance, scope, request and domains; see assets/defaults/activation-task.example.json. No files created; run context routing separately for L2–L4. Host discovery and actual authorization remain independent.

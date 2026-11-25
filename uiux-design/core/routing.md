@@ -1,4 +1,4 @@
-# Routing and progressive loading (V1.2)
+# Routing and progressive loading (V1.2.1)
 Read profiles/context-selection.md for classification; use scripts/context.mjs optionally to validate a structured context and output a deterministic read plan. Natural language inference is done by the host agent, not the CLI. Do not ask for every field. Ask only when ambiguity materially affects scope, permissions or deliverable.
 
 ## Independent dimensions
@@ -25,3 +25,6 @@ Read the product/platform profile(s), then relevant intent workflow and stage gu
 
 ## Compatibility
 Old natural-language modes visual/motion/information/interaction narrow domains; design/preview map to Design; enhance maps to scoped refine; template maps to exploration or production depending on actual request; system/learn/resume preserved. Audit, repair, refine, validate, explore retain their meanings. Do not silently interpret a specialist request as permission to modify production. Use one task owner, one registry and non-overlapping file ownership across agents. Record limitations when tools unavailable.
+
+## Activation integration
+Use L0–L4 activation before full routing. L1 may stop after awareness. For L2–L4 apply context profiles, intent, stage and depth; activation never overrides permission or gates. Resolve preferences per project when relevant; load only needed paths.

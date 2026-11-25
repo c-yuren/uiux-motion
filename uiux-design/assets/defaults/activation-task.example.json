@@ -1,0 +1,10 @@
+{
+  "relevance": "direct",
+  "scope": "local",
+  "request": "auto",
+  "domains": [
+    "motion"
+  ],
+  "alreadyActive": false,
+  "overrides": {}
+}

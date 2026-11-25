@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1 — Global activation refinement
+- Global-first optional native discovery, L0–L4 activation and duplicate workflow protection.
+- Field-level preferences and project isolation; no changes to existing registry or config schema.
+- Read-only activation resolver, host installation guide, examples and tests.
+
 ## 1.2.0 — Context-aware workflows
 - Composable product, platform, input and medium profiles.
 - Separate existing/new task intents and Design/Produce stages with explicit authorization boundaries.

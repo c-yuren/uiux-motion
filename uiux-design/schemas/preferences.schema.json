@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "activation": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "auto",
+            "manual",
+            "disabled"
+          ]
+        },
+        "maxAutoLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "quality": {
+          "enum": [
+            "functional",
+            "refined",
+            "premium",
+            "signature"
+          ]
+        },
+        "depth": {
+          "enum": [
+            "auto",
+            "quick",
+            "balanced",
+            "deep",
+            "extreme"
+          ]
+        }
+      }
+    }
+  }
+}

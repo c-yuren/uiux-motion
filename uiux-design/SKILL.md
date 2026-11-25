@@ -1,10 +1,13 @@
 ---
 name: uiux-design
-description: Design, implement, audit, refine and validate visual presentation, information graphics, interfaces, creative layouts, typography, icons, materials, display effects, UI animation, motion, gestures, interaction states and design systems. Use proactively when creating or modifying UI/UX, improving visual polish, redesigning information, auditing every existing component or animation, exploring alternatives or adapting templates; also use for visual presentation in documents or slides when relevant.
+description: Design, implement, audit, refine and validate visual presentation, information graphics, interfaces, creative layouts, typography, icons, materials, display effects, UI animation, motion, gestures, interaction states and design systems. Use proactively for relevant user-facing design tasks, not unrelated backend or pure logic work; when creating or modifying UI/UX, improving visual polish, redesigning information, auditing every existing component or animation, exploring alternatives or adapting templates; also use for visual presentation in documents or slides when relevant.
 ---
 
 # UIUX Design
 One skill, six specialist modules, composable product/platform profiles, task intents and Design/Produce stages. Aim for meaningful, distinctive, accessible design, not superficial decoration or template imitation. Motion and visual presentation may overlap; route by purpose, not whether pixels move.
+
+## Activation gate
+Classify relevance before loading references. L0: unrelated, stop using this skill. L1: indirect or uncertain impact, apply only entry principles and reassess. L2: targeted UI task. L3: integrated feature. L4: comprehensive design/audit. Honor explicit opt-out and scope; reuse active workflow. For configuration or activation decisions read [activation](core/activation.md) and [configuration](core/configuration.md); do not require optional CLI. Global installation never grants product-write permission. For L2–L4 continue below.
 
 ## Start
 1. Read user intent, scope, current design, repository status and available tools. Respect existing design and code. Read [routing](core/routing.md) and [operations](core/operations.md). Inspect existing .uiux data; if legacy .motion exists, offer non-destructive migration or read it, never overwrite.

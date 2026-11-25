@@ -1,4 +1,4 @@
-# UIUX Design V1.2
+# UIUX Design V1.2.1
 
 A unified agent skill for visual, information, motion and interaction design, creative exploration, templates and systematic UI/UX refinement.
 
@@ -21,3 +21,6 @@ The unified registry lives in the target project's .uiux/ directory. Optional No
 
 ## V1.2 task context
 Profiles separate product purpose from platform and medium. Intent distinguishes Create, Extend, Adjust, Refine, Redesign, Repair, Audit, Explore, Validate, Migrate, System, Learn, Resume. Design and Produce are independent stages; a simple local fix need not generate a full contract. Design-only and read-only tasks never authorize product writes. Use context.mjs plan, contract-check and templates for structured routing and handoff metadata. See [V1.2 architecture](docs/v1.2-architecture.md) and [context selection](uiux-design/profiles/context-selection.md). Natural-language classification and actual design remain agent responsibilities.
+
+## Global-first activation
+Recommended: user-level skill installation, relevance-based L0–L4 activation, per-project state and optional preference inheritance. See [host install guide](uiux-design/integrations/global-install.md), [activation policy](uiux-design/core/activation.md), and [configuration](uiux-design/core/configuration.md). Do not add the entire skill to always-on instructions. No automatic host configuration or background service; project-level pinning remains supported.
