@@ -1,0 +1,8 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import {searchResources,resourceLocation} from "../scripts/provider-core.mjs";
+const dir=new URL("../integrations/providers/ui-moments/",import.meta.url),read=f=>JSON.parse(fs.readFileSync(new URL(f,dir),"utf8")),p=read("provider.json"),cs=p.groups.map(g=>read("catalog-"+g+".json"));
+test("index counts and uniqueness",()=>{assert.equal(cs.reduce((n,c)=>n+c.items.length,0),884);assert.equal(new Set(cs.flatMap(c=>c.items.map(x=>x.id))).size,884);for(const c of cs)assert.equal(c.items.length,p.counts[c.group])});
+test("search, group, native exclusion, limits",()=>{assert.ok(searchResources(cs,"tide progress").some(x=>x.id==="tide-progress"));assert.ok(searchResources(cs,"進度").length);assert.ok(searchResources(cs,"chart",{group:"astryx"}).every(x=>x.group==="astryx"));assert.ok(searchResources(cs,"",{framework:"native"}).every(x=>["original","loader"].includes(x.group)));assert.equal(searchResources(cs,"",{limit:2}).length,2);assert.throws(()=>searchResources(cs,"",{limit:0}))});
+test("all pinned locations, license notices and path rejection",()=>{for(const c of cs)for(const r of c.items){const l=resourceLocation(p,c.group,r);assert.match(l.raw,/^https:\/\/raw\.githubusercontent\.com\//);assert.ok(l.reviewRequired);assert.ok(l.licenses.length>=2)}assert.throws(()=>resourceLocation(p,"original",{id:"bad",path:"../secrets"}));assert.throws(()=>resourceLocation(p,"original",{id:"bad",path:"a",repository:"evil/repo"}));assert.throws(()=>resourceLocation(p,"original",{id:"bad",path:"a",revision:"main"}))});

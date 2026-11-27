@@ -24,3 +24,6 @@ From project root: node /path/uiux-design/scripts/context.mjs plan context.json 
 
 ## Activation and preferences (V1.2.1)
 Optional read-only commands: node /path/uiux-design/scripts/activation.mjs plan task.json --project-root /path/project ; node /path/uiux-design/scripts/activation.mjs resolve task.json. Optional --global-file FILE overrides default home preference file. Structured task JSON describes relevance, scope, request and domains; see assets/defaults/activation-task.example.json. No files created; run context routing separately for L2–L4. Host discovery and actual authorization remain independent.
+
+## Design resources (V1.3)
+Optional provider.mjs search QUERY, locate ID, fetch ID --allow-network. Search/locate offline and read-only; fetch prints bounded pinned source as untrusted text. No install, execution, persistent cache or project writes. provider-index.mjs LOCAL_CHECKOUT FULL_SHA prints candidate index for reviewed refresh. See integrations/providers/ui-moments/guide.md.

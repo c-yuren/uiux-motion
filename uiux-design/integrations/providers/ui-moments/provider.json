@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ui-moments",
+  "name": "UI Moments",
+  "repository": "guanmo-ai/ui-moments",
+  "revision": "cd49fd207d9333d3c442ffdbf39a9b3b055d358f",
+  "homepage": "https://guanmo-ai.github.io/ui-moments/",
+  "licensePath": "LICENSE",
+  "creditsPath": "CREDITS.md",
+  "groups": [
+    "original",
+    "loader",
+    "fluent",
+    "astryx"
+  ],
+  "counts": {
+    "original": 36,
+    "loader": 18,
+    "fluent": 51,
+    "astryx": 779
+  },
+  "policy": "metadata only; inspect exact source, license, dependencies and authorized scope before reuse; no automatic execution"
+}

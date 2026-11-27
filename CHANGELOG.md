@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 — Design resource discovery
+- Optional UI Moments provider, pinned metadata index for 884 entries.
+- Offline search and source/license resolution; explicit bounded source retrieval; reviewed local-checkout index refresh.
+- Preserve existing modular architecture, original design alternatives and no mandatory dependencies.
+
 ## 1.2.1 — Global activation refinement
 - Global-first optional native discovery, L0–L4 activation and duplicate workflow protection.
 - Field-level preferences and project isolation; no changes to existing registry or config schema.

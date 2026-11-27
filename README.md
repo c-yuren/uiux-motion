@@ -1,4 +1,4 @@
-# UIUX Design V1.2.1
+# UIUX Design V1.3.0
 
 A unified agent skill for visual, information, motion and interaction design, creative exploration, templates and systematic UI/UX refinement.
 
@@ -24,3 +24,6 @@ Profiles separate product purpose from platform and medium. Intent distinguishes
 
 ## Global-first activation
 Recommended: user-level skill installation, relevance-based L0–L4 activation, per-project state and optional preference inheritance. See [host install guide](uiux-design/integrations/global-install.md), [activation policy](uiux-design/core/activation.md), and [configuration](uiux-design/core/configuration.md). Do not add the entire skill to always-on instructions. No automatic host configuration or background service; project-level pinning remains supported.
+
+## V1.3 design resources
+UI Moments is an optional first-class external reference provider: 884 indexed entries at a pinned source revision (metadata only), offline lexical search, source/license location and explicit bounded network retrieval. [Guide](uiux-design/integrations/providers/ui-moments/guide.md). No mandatory MCP or library installation. Existing V1.2.1 activation and project state are preserved. A host that exposes only SKILL.md can follow the public provider link if authorized, but cannot use local index/scripts without file access.

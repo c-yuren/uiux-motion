@@ -19,3 +19,6 @@ Verify independent mixed product/platform profiles; local adjustment minimal cha
 
 ## V1.2.1 acceptance
 Verify L0 unrelated, L1 indirect, L2 local, L3 feature, L4 full scope, manual/off/force and caps; per-field inheritance; explicit project root isolation; no write authority; duplicate reuse and narrow loading. 21 pure JavaScript assertions exercised in isolate during implementation. Node CLI and real-host smoke checks are included as tests/procedure but not executed here. Host discovery cannot be guaranteed by Skill instructions alone.
+
+## V1.3 acceptance
+Index all 884 documented snapshot entries with unique IDs; verify counts, lexical search, group/native filters, pinned source and license references, unsafe path/repository/revision rejection. 11 pure JS check groups exercised during implementation, including all 884 location mappings. Node CLI, actual source fetching, browser rendering and real-agent integration remain to be tested. No code reuse or license clearance is implied by metadata.

@@ -24,6 +24,8 @@ Classify relevance before loading references. L0: unrelated, stop using this ski
 | [Interaction](modules/interaction/guide.md) | Affordance, flow, feedback, keyboard, touch, async states |
 | [Creativity](modules/creativity/guide.md) | Original approaches, alternatives, anti-generic design |
 | [Templates](modules/templates/guide.md) | Local patterns, assets, external reference, adaptation, licensing |
+## Optional design resource discovery (V1.3)
+For meaningful control, motion, feedback, data visualization or creative alternatives, consider UI Moments (https://guanmo-ai.github.io/ui-moments/; https://github.com/guanmo-ai/ui-moments) alongside native primitives, local templates and original designs. It is optional, not a default visual style. Read [provider guide](integrations/providers/ui-moments/guide.md) if accessible; search the local metadata index via scripts/provider.mjs or native tools. If only SKILL.md is available, use the public gallery when network access is authorized; otherwise design independently and disclose missing references. Compare relevant examples by purpose, input, platform, dependencies, accessibility and cost; review exact license, attribution and source before reuse. Never automatically install or execute remote code. Do not inflate local fixes or bypass Design/Produce authority.
 ## Non-negotiable
 - Scope before sophistication: never expand a local adjustment into a redesign, introduce a new design system or replace dependencies merely for style. Respect explicit scope, read-only and stage constraints before any default routing.
 - Preserve meaning, function, focus, accessibility and user control. No unnecessary animation, misleading data, artificial delays or inaccessible effects.

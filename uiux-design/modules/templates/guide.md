@@ -6,3 +6,6 @@ For a generated template, record ID/version, purpose, platform, source/license/p
 
 ## Context-aware selection
 Use context.mjs templates context.json [query] to rank local assets by product/platform/domain/stage. Score is advisory, not compatibility or quality proof; inspect medium, actual framework, intended use, accessibility, provenance and existing design. For Adjust/Repair favor existing design, not a template replacement. For Design, isolate prototypes; for Produce, integrate only approved compatible assets.
+
+## UI Moments (V1.3)
+Use [provider guide](../../integrations/providers/ui-moments/guide.md) for contextual search of the pinned local metadata index. This provider is a preferred candidate for interaction and motion research when relevant, not a mandatory dependency. Source-specific license, dependency and platform review is mandatory; local templates and original design remain independent alternatives. Do not import a full gallery into target projects.

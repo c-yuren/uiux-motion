@@ -1,0 +1,25 @@
+{
+"schemaVersion":1,
+"provider":"ui-moments",
+"revision":"cd49fd207d9333d3c442ffdbf39a9b3b055d358f",
+"group":"loader",
+"items":[
+{"id":"paper-fold","name":"Paper Fold","type":"Loader","path":"gallery/loaders/originals.mjs","alias":"纸张折叠","family":"Geometry"},
+{"id":"signal-return","name":"Signal Return","type":"Loader","path":"gallery/loaders/originals.mjs","alias":"信号回转","family":"Lines"},
+{"id":"tide-ring","name":"Tide Ring","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"潮环","family":"Rings"},
+{"id":"stack-blocks","name":"Stack Blocks","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"叠块","family":"Geometry"},
+{"id":"metronome-dot","name":"Beat Bounce","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"节拍弹跳","family":"Dots"},
+{"id":"rising-words","name":"Floating Text","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"浮字","family":"Text"},
+{"id":"dot-field","name":"Dot Field","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"点阵波","family":"Dots"},
+{"id":"sand-turn","name":"Sand Turn","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"翻转沙漏","family":"Icons"},
+{"id":"draft-card","name":"Article Skeleton","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"文稿骨架","family":"States"},
+{"id":"clock-hands","name":"Clock Hands","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"时针","family":"Lines"},
+{"id":"orbit-pair","name":"Orbit Pair","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"双星绕行","family":"Rings"},
+{"id":"level-bars","name":"Level Bars","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"电平","family":"Lines"},
+{"id":"square-lap","name":"Square Track","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"绕方","family":"Geometry"},
+{"id":"pendulum","name":"Pendulum","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"摆锤","family":"Lines"},
+{"id":"nested-squares","name":"Nested Squares","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"回字","family":"Geometry"},
+{"id":"gap-ring","name":"Broken Ring","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"缺环","family":"Rings"},
+{"id":"pixel-snake","name":"Pixel Snake","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"方阵蛇","family":"Geometry"},
+{"id":"flip-tile","name":"Flip Tile","type":"Loader","path":"gallery/loaders/motifs.mjs","alias":"翻块","family":"Geometry"}
+]}

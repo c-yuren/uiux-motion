@@ -2,6 +2,13 @@
   "schemaVersion": 1,
   "providers": [
     {
+      "name": "UI Moments",
+      "url": "https://guanmo-ai.github.io/ui-moments/",
+      "repository": "https://github.com/guanmo-ai/ui-moments",
+      "role": "interactive design references and reusable examples subject to source-specific review",
+      "catalog": "providers/ui-moments/provider.json"
+    },
+    {
       "name": "shadcn/ui",
       "url": "https://ui.shadcn.com/",
       "role": "components"
