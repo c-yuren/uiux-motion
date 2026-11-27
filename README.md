@@ -27,3 +27,7 @@ Recommended: user-level skill installation, relevance-based L0–L4 activation, 
 
 ## V1.3 design resources
 UI Moments is an optional first-class external reference provider: 884 indexed entries at a pinned source revision (metadata only), offline lexical search, source/license location and explicit bounded network retrieval. [Guide](uiux-design/integrations/providers/ui-moments/guide.md). No mandatory MCP or library installation. Existing V1.2.1 activation and project state are preserved. A host that exposes only SKILL.md can follow the public provider link if authorized, but cannot use local index/scripts without file access.
+
+## License
+
+Original project materials are licensed under the [Apache License, Version 2.0](LICENSE) (SPDX: Apache-2.0). See [NOTICE](NOTICE) for attribution. The independently installable `uiux-design/` directory includes its own copy of these files. Third-party materials retain their respective licenses; see the [UI Moments MIT notice](uiux-design/integrations/providers/ui-moments/LICENSE.ui-moments) and [upstream credits](https://github.com/guanmo-ai/ui-moments/blob/cd49fd207d9333d3c442ffdbf39a9b3b055d358f/CREDITS.md). This license does not relicense referenced third-party assets or code.

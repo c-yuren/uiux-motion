@@ -1,0 +1,17 @@
+UIUX Design (uiux-motion)
+Copyright 2026 c-yuren and UIUX Design contributors
+
+Original project material is made available under Apache License 2.0.
+Third-party material remains subject to its respective license terms.
+
+The UI Moments provider contains a metadata index derived from UI Moments,
+maintained by Guanmo (guanmo-ai), at revision cd49fd207d9333d3c442ffdbf39a9b3b055d358f.
+UI Moments project code is licensed under MIT; its copyright and license
+notice is preserved in the provider's LICENSE.ui-moments file.
+Fluent UI React (Microsoft), Astryx (Meta), and other referenced upstream
+components and fonts retain their own licenses. Their implementation code
+and fonts are not bundled by this provider's metadata index. Consult the
+upstream credits and exact source-specific notices before reusing them:
+https://github.com/guanmo-ai/ui-moments/blob/cd49fd207d9333d3c442ffdbf39a9b3b055d358f/CREDITS.md
+
+These attributions do not imply sponsorship or endorsement.

@@ -1,5 +1,6 @@
 ---
 name: uiux-design
+license: Apache-2.0
 description: Design, implement, audit, refine and validate visual presentation, information graphics, interfaces, creative layouts, typography, icons, materials, display effects, UI animation, motion, gestures, interaction states and design systems. Use proactively for relevant user-facing design tasks, not unrelated backend or pure logic work; when creating or modifying UI/UX, improving visual polish, redesigning information, auditing every existing component or animation, exploring alternatives or adapting templates; also use for visual presentation in documents or slides when relevant.
 ---
 
